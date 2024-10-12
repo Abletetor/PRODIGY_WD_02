@@ -1,0 +1,112 @@
+.stopwatch-container {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   width: 100%;
+   max-width: 350px;
+   margin: 0 auto;
+}
+
+.stopwatch-time {
+   font-size: 48px;
+   margin-bottom: 20px;
+}
+
+.controls button {
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   margin: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.controls button i {
+   margin-right: 8px;
+}
+
+.controls button:hover {
+   background-color: #0056b3;
+}
+
+.controls button:disabled {
+   background-color: #cccccc;
+   cursor: not-allowed;
+}
+
+/* Laps */
+.laps {
+   margin-top: 20px;
+}
+
+.laps ul {
+   list-style: none;
+   padding: 0;
+}
+
+.laps li {
+   font-size: 16px;
+   margin-bottom: 5px;
+}
+
+/* Lap Highlights */
+.fastest-lap {
+   color: #28a745;
+   font-weight: bold;
+}
+
+.slowest-lap {
+   color: #dc3545;
+   font-weight: bold;
+}
+
+/* Dark Mode */
+.dark-mode {
+   background-color: #222;
+   color: #fff;
+}
+
+.dark-mode-btn {
+   background-color: #333;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   margin-bottom: 10px;
+}
+
+.dark-mode-btn:hover {
+   background-color: #555;
+}
+
+.stopwatch-container.dark-mode .controls button {
+   background-color: #444;
+}
+
+.stopwatch-container.dark-mode .controls button:hover {
+   background-color: #666;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+   .stopwatch-container {
+      padding: 15px;
+   }
+
+   .stopwatch-time {
+      font-size: 36px;
+   }
+
+   .controls button {
+      padding: 8px 16px;
+      font-size: 14px;
+   }
+
+   .laps li {
+      font-size: 14px;
+   }
+}
